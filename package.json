@@ -1,0 +1,15 @@
+{
+  "name": "amazon-connect-monitoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "(cd monitoring-stack-cdk && npm install); (cd deployment-stack-cdk && npm install)"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT-0"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "deployment-cdk-resources",
+  "version": "1.0.0",
+  "bin": {
+    "deployment-cdk-resources": "bin/deployment-cdk-resources.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.61.1",
+    "@types/jest": "^26.0.14",
+    "@types/node": "10.17.5",
+    "aws-cdk": "^1.61.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-codebuild": "^1.61.1",
+    "@aws-cdk/aws-iam": "^1.61.1",
+    "@aws-cdk/core": "^1.61.1",
+    "aws-sdk": "^2.743.0",
+    "source-map-support": "^0.5.19"
+  }
+}

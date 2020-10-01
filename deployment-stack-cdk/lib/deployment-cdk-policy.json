@@ -1,0 +1,76 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "apigateway:GET",
+                "apigateway:PATCH",
+                "apigateway:POST",
+                "apigateway:PUT",
+                "cloudformation:CreateChangeSet",
+                "cloudformation:DescribeChangeSet",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStacks",
+                "cloudformation:ExecuteChangeSet",
+                "cloudformation:GetTemplate",
+                "cloudfront:CreateCloudFrontOriginAccessIdentity",
+                "cloudfront:CreateDistributionWithTags",
+                "cloudfront:GetCloudFrontOriginAccessIdentity",
+                "cloudfront:GetDistribution",
+                "cognito-identity:CreateIdentityPool",
+                "cognito-identity:SetIdentityPoolRoles",
+                "cognito-idp:CreateUserPool",
+                "cognito-idp:CreateUserPoolDomain",
+                "dynamodb:CreateTable",
+                "dynamodb:DescribeTable",
+                "es:CreateElasticsearchDomain",
+                "es:DescribeElasticsearchDomain",
+                "events:DescribeRule",
+                "events:PutRule",
+                "events:PutTargets",
+                "iam:AttachRolePolicy",
+                "iam:CreateRole",
+                "iam:GetRole",
+                "iam:GetRolePolicy",
+                "iam:PutRolePolicy",
+                "kinesis:CreateStream",
+                "kinesis:DescribeStream",
+                "kinesis:StartStreamEncryption",
+                "kms:CreateGrant",
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:CreateGrant",
+                "kms:DescribeKey",
+                "kms:GenerateDataKey",
+                "lambda:AddPermission",
+                "lambda:CreateEventSourceMapping",
+                "lambda:CreateFunction",
+                "lambda:GetEventSourceMapping",
+                "lambda:GetFunction",
+                "lambda:GetFunctionConfiguration",
+                "lambda:PublishLayerVersion",
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "s3:CreateBucket",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketWebsite"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": "arn:aws:s3:::amazon-connect-monitoring-test-artifact-bucket",
+            "Effect": "Allow"
+        }
+    ],
+    "Version": "2012-10-17"
+}
