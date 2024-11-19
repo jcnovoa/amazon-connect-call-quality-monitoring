@@ -5,11 +5,11 @@ To deploy the solution, [click here](https://serverlessrepo.aws.amazon.com/appli
 
 Here are some relevant documents:
 
-- [Deployment guide](https://amazon-connect.github.io/amazon-connect-call-quality-monitoring/en/deployment-guide.html)
-- [User guide](https://amazon-connect.github.io/amazon-connect-call-quality-monitoring/en/user-guide.html)
-- [Application Architecture](https://amazon-connect.github.io/amazon-connect-call-quality-monitoring/en/application-architecture.html)
-- [Data Model](https://amazon-connect.github.io/amazon-connect-call-quality-monitoring/en/data-model.html)
-- [Operations guide](https://amazon-connect.github.io/amazon-connect-call-quality-monitoring/en/operations-guide.html)
+- [Deployment guide](https://jcnovoa.github.io/amazon-connect-call-quality-monitoring/en/deployment-guide.html)
+- [User guide](https://jcnovoa.github.io/amazon-connect-call-quality-monitoring/en/user-guide.html)
+- [Application Architecture](https://jcnovoa.github.io/amazon-connect-call-quality-monitoring/en/application-architecture.html)
+- [Data Model](https://jcnovoa.github.io/amazon-connect-call-quality-monitoring/en/data-model.html)
+- [Operations guide](https://jcnovoa.github.io/amazon-connect-call-quality-monitoring/en/operations-guide.html)
 
 
 If you have any issues please don't hesitate to open up a Github issue. 
