@@ -57,7 +57,7 @@ export default class MonitoringStack extends cdk.Stack {
 
     const sarStackConfirmer = new lambda.Function(this, 'SAR Custom Resource Confirmer', {
       handler: 'index.handler',
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       code: lambda.Code.fromAsset('./resources/custom-resources/sar-confirmer'),
       environment: {
         CFN_RESPONSE_PAYLOAD: cfnResponse!,

@@ -178,7 +178,7 @@ export class ElasticSearchStack extends cfn.NestedStack {
     * our Kibana instance and updating relevant ES options (for example, configuring an ingest node)
     */
     const elasticsearchConfiurationLambda = new lambda.Function(this, 'ElasticsearchConfigurationLambda', {
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       code: lambda.Code.fromAsset('./resources/custom-resources/kibana-config'),
       handler: 'kibanaConfigurer.handler',
       timeout: cdk.Duration.seconds(100),

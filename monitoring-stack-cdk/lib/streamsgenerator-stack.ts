@@ -46,7 +46,7 @@ export class StreamsGeneratorStack extends cfn.NestedStack {
     });
     /* Generate streams website dynamically using Lambda and the API Gateway URL generated above  */
     const streamsGenerator = new lambda.Function(this, 'streamsGenerator', {
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       code: lambda.Code.fromAsset('./resources/custom-resources/frontend-generator'),
       handler: 'frontendGenerator.handler',
       timeout: cdk.Duration.minutes(2),

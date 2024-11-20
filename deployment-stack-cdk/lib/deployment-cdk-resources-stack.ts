@@ -91,7 +91,7 @@ export class DeploymentCdkResourcesStack extends cdk.Stack {
     codeBuildPolicy.attachToRole(cdkProject.role!)
 
     var codeBuildTrigger = new lambda.Function(this, "Code Build Trigger", {
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       code: lambda.Code.fromInline(fs.readFileSync('./resources/lambda-functions/cdk-builder/cdkBuilder.js', 'utf-8')),
       handler: 'index.handler',
       environment: {
